@@ -150,3 +150,24 @@ A la racine du projet
 ```bash
 python manage.py startapp library
 ```
+
+### 3.2 — Déclarer l’app dans le projet
+
+Pour que Django prenne en compte l’app, il faut l’ajouter à la config.
+Ouvre biblio_backend/settings.py et dans INSTALLED_APPS, ajoute :
+
+```py
+INSTALLED_APPS = [
+    # apps de Django
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # ton app perso
+    'library',
+]
+```
+

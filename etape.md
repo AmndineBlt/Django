@@ -170,4 +170,11 @@ INSTALLED_APPS = [
     'library',
 ]
 ```
+### 3.3 — Vérification
 
+Tester que tout est bien connecté :
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+Même s’il n’y a pas encore de modèle, Django garde une trace de ton app

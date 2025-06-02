@@ -296,4 +296,32 @@ python manage.py showmigrations
 python manage.py createsuperuser
 ```
 
-##  
+## 🛠️ Étape 6 — Les fixtures
+
+### 1.1 — Créer un dossier pour stocker les fixtures
+
+### 1.2 — Créer un fichier books.json
+
+```json
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "isbn": "9782070368228",
+      "title": "Le Petit Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "description": "Un conte poétique et philosophique.",
+      "published": "1943",
+      "page_count": 96,
+      "rating": 4.8,
+      "created_at": "2025-06-01T12:00:00Z"
+    }
+  },
+]
+```
+
+```bash
+python manage.py loaddata library/fixtures/books.json
+```
+

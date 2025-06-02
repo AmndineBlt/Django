@@ -1,0 +1,44 @@
+[
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "isbn": "9782070368228",
+      "title": "Le Petit Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "description": "Un conte poétique et philosophique.",
+      "published": "1943",
+      "page_count": 96,
+      "rating": 4.8,
+      "created_at": "2025-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "isbn": "9782253006329",
+      "title": "L'Étranger",
+      "author": "Albert Camus",
+      "description": "Roman emblématique de l’absurde.",
+      "published": "1942",
+      "page_count": 185,
+      "rating": 4.3,
+      "created_at": "2025-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "isbn": "9782266283225",
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "Un chef-d'œuvre de la dystopie.",
+      "published": "1949",
+      "page_count": 328,
+      "rating": 4.7,
+      "created_at": "2025-06-01T12:00:00Z"
+    }
+  }
+]

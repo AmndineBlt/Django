@@ -278,16 +278,26 @@ python manage.py makemigrations
 ```
 → Django détecte les nouveaux modèles (ici Book) et crée un fichier dans library/migrations/.
 
-### b. Appliquer les migrations (écrire dans PostgreSQL)
+#### b. Appliquer les migrations (écrire dans PostgreSQL)
 
 ```bash
 python manage.py migrate
 ```
 → Cela crée la vraie table library_book dans ta base PostgreSQL.
 
-### c. Vérification rapide
+#### c. Vérification rapide
 
 ```bash
 python manage.py showmigrations
 ```
 → Si la migration c'est bien passé on voit un [X] devant library.0001_initial
+
+## 🛠️ Étape 5 — Configuration de l'admin
+
+### 1.1 — Créer un superutilisateur (admin)
+
+```bash
+python manage.py createsuperuser
+```
+
+### 

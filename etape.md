@@ -130,7 +130,7 @@ python manage.py migrate
 ```
 Cela va créer les tables de base (auth, admin, sessions, etc.) dans ta base PostgreSQL.
 
-## Étape 3 — Créer une application Django : `library`
+## 🛠️ Étape 3 — Créer une application Django : `library`
 
 ### 🧠 Cours express — C’est quoi une "app" Django ?
 
@@ -181,3 +181,113 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 Même s’il n’y a pas encore de modèle, Django garde une trace de ton app
+
+## 🛠️ Étape 4 — Structure de la base de données
+
+### 1.1 — Quelles sont les entités principales ?
+
+| Entité        | Description                                                                     |
+| ------------- | ------------------------------------------------------------------------------- |
+| **User**      | L’utilisateur connecté (utilise `django.contrib.auth`)                          |
+| **Book**      | Un livre (titre, auteur, résumé...)                                             |
+| **UserList**  | Une **liste personnelle** d’un utilisateur                                      |
+| **ListEntry** | Lien entre un **livre** et une **liste** (ex : "ce livre est dans mes favoris") |
+| **Review**    | Un commentaire ou une note laissée par un utilisateur sur un livre              |
+
+### 2.2 — Modèle conceptuel de données (MCD)
+
+Les relations :
+* Un utilisateur peut créer plusieurs listes (lu, à lire, favoris...)
+* Une liste contient plusieurs livres, et un livre peut être dans plusieurs listes
+* Un utilisateur peut noter ou commenter un livre
+* Un livre peut recevoir plusieurs reviews (notes/commentaires)
+* Les livres sont partagés par tous, mais les listes sont propres à chaque utilisateur
+
+🧍 User (fourni par Django)
+→ On utilisera `from django.contrib.auth.models import User`
+
+📘 Book
+```py
+isbn: str
+title: str
+author: str
+description: text
+created_at: datetime
+```
+
+🗂️ UserList
+```py
+user: FK → User
+name: str (ex: "à lire", "favoris", etc.)
+created_at: datetime
+```
+→ Chaque utilisateur peut avoir plusieurs listes
+
+📚 ListEntry
+```py
+book: FK → Book
+user_list: FK → UserList
+added_at: datetime
+```
+→ Représente un livre dans une liste précise
+
+📝 Review
+```py
+user: FK → User
+book: FK → Book
+rating: int (1 à 5)
+comment: text
+created_at: datetime
+```
+
+### 2.3 — Création du modèle `Book`
+
+```py
+class Book(models.Model):
+    # Title of the book (required, max 255 characters)
+    title = models.CharField(max_length=255)
+
+    # Author's name (required)
+    author = models.CharField(max_length=255)
+
+    # Short or long description of the book (optional)
+    description = models.TextField(blank=True)
+
+    # ISBN number (required, unique if provided)
+    isbn = models.CharField(max_length=13, unique=True)
+
+    # Automatically store the date the book was added
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        # What shows up in admin or console when we print the object
+        return f"{self.title} by {self.author}"
+```
+
+### 2.4 — Appliquer les migrations
+
+Rappel rapide : c’est quoi une migration ?
+  Une migration, c’est une “traduction” de ton modèle Python (Book) vers une table SQL (dans PostgreSQL ici).
+
+  Django garde un historique des migrations pour que tu puisses ajouter / modifier / supprimer des modèles de manière propre et traçable.
+
+#### a. Générer les fichiers de migration
+
+```bash
+python manage.py makemigrations
+```
+→ Django détecte les nouveaux modèles (ici Book) et crée un fichier dans library/migrations/.
+
+### b. Appliquer les migrations (écrire dans PostgreSQL)
+
+```bash
+python manage.py migrate
+```
+→ Cela crée la vraie table library_book dans ta base PostgreSQL.
+
+### c. Vérification rapide
+
+```bash
+python manage.py showmigrations
+```
+→ Si la migration c'est bien passé on voit un [X] devant library.0001_initial

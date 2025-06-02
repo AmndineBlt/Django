@@ -84,14 +84,17 @@ sudo -u postgres psql
 ```
 
 ```sql
--- Créer la base
-CREATE DATABASE biblio_db;
-
 -- Créer un utilisateur
-CREATE USER biblio_user WITH PASSWORD 'biblio_pass';
+CREATE USER biblio_user WITH LOGIN PASSWORD 'biblio_pass';
 
--- Donner les droits sur la base
-GRANT ALL PRIVILEGES ON DATABASE biblio_db TO biblio_user;
+-- Créer la base de données
+CREATE DATABASE biblio_db WITH OWNER biblio_user;
+
+-- Se déplacer dans la base
+\c biblio_db biblio_user
+
+-- Connexion direct
+psql -d biblio_db -U biblio_user
 
 -- Quitter
 \q

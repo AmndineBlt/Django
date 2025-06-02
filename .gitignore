@@ -1,0 +1,17 @@
+# Environnement virtuel
+env/
+
+# Fichiers Python inutiles
+__pycache__/
+*.py[cod]
+
+# Fichiers de log ou base temporaire
+*.sqlite3
+*.log
+
+# Paramètres locaux (parfois générés par Django)
+.env
+
+# Cache de l'éditeur
+.vscode/
+.idea/

@@ -246,16 +246,12 @@ created_at: datetime
 class Book(models.Model):
     # Title of the book (required, max 255 characters)
     title = models.CharField(max_length=255)
-
     # Author's name (required)
     author = models.CharField(max_length=255)
-
     # Short or long description of the book (optional)
     description = models.TextField(blank=True)
-
     # ISBN number (required, unique if provided)
     isbn = models.CharField(max_length=13, unique=True)
-
     # Automatically store the date the book was added
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -300,4 +296,4 @@ python manage.py showmigrations
 python manage.py createsuperuser
 ```
 
-### 
+##  

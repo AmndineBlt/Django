@@ -364,3 +364,6 @@ python manage.py loaddata library/fixtures/lists.json
 
 ## 🛠️ Étape 7 — Les test unitaires
 
+### 7.1 — validation de la note (Review.rating)
+
+Une Review ne peut pas avoir une note hors de 1 à 5

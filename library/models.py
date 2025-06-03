@@ -37,3 +37,30 @@ class Review(models.Model):
         # Custom validation: rating must be between 1 and 5
         if self.rating < 1 or self.rating > 5:
             raise ValidationError("Rating must be between 1 and 5.")
+
+class UserList(models.Model):
+    LIST_CHOICES = [
+        ('read', 'Lu'),
+        ('to_read', 'À lire'),
+        ('favorite', 'Favoris'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='lists')
+    name = models.CharField(max_length=20, choices=LIST_CHOICES)
+
+    class Meta:
+        unique_together = ('user', 'name')
+
+    def __str__(self):
+        return f"{self.user.username} - {self.get_name_display()}"
+
+class ListEntry(models.Model):
+    user_list = models.ForeignKey(UserList, on_delete=models.CASCADE, related_name='entries')
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    added_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user_list', 'book')
+
+    def __str__(self):
+        return f"{self.book.title} dans {self.user_list}"

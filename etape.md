@@ -350,6 +350,17 @@ Pour créer les fixtures des user générés
 python manage.py dumpdata auth.User --indent 2 > library/fixtures/users.json
 ```
 
-## Autre
+Pour tout remettre à zéro et rechercher :
+```bash
+python manage.py flush
+python manage.py loaddata library/fixtures/users.json
+python manage.py loaddata library/fixtures/books.json
+python manage.py loaddata library/fixtures/lists.json
+```
+
+### Notes
 (Mettre en place un script qui reset une base de dev avec fixtures)
 (créer des settings séparés pour dev et prod)
+
+## 🛠️ Étape 7 — Les test unitaires
+

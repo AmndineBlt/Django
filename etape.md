@@ -350,5 +350,6 @@ Pour créer les fixtures des user générés
 python manage.py dumpdata auth.User --indent 2 > library/fixtures/users.json
 ```
 
+## Autre
 (Mettre en place un script qui reset une base de dev avec fixtures)
 (créer des settings séparés pour dev et prod)

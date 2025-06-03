@@ -296,7 +296,7 @@ python manage.py showmigrations
 python manage.py createsuperuser
 ```
 
-## 🛠️ Étape 6 — Les fixtures
+## 🛠️ Étape 6.1 — Les fixtures
 
 ### 1.1 — Créer un dossier pour stocker les fixtures
 
@@ -325,3 +325,30 @@ python manage.py createsuperuser
 python manage.py loaddata library/fixtures/books.json
 ```
 
+## 🛠️ Étape 6.2 — Les scripts
+
+### 1.1 — Fichier generate_nom.py
+
+Exemple avec generate_users.py
+-> Créer un dossier scripts pour mettre tout les fichiers qui vont servir à la génération.
+
+Ouvrir le shell
+```bash
+python manage.py shell
+```
+
+```py
+from library.scripts.generate_users import run
+run()
+```
+Pour créer les fixtures des book générés
+```bash
+python manage.py dumpdata library.Book --indent 2 > library/fixtures/books.json
+```
+Pour créer les fixtures des user générés
+```bash
+python manage.py dumpdata auth.User --indent 2 > library/fixtures/users.json
+```
+
+(Mettre en place un script qui reset une base de dev avec fixtures)
+(créer des settings séparés pour dev et prod)

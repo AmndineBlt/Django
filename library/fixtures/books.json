@@ -1,44 +1,1547 @@
 [
-  {
-    "model": "library.book",
-    "pk": 1,
-    "fields": {
-      "isbn": "9782070368228",
-      "title": "Le Petit Prince",
-      "author": "Antoine de Saint-Exupéry",
-      "description": "Un conte poétique et philosophique.",
-      "published": "1943",
-      "page_count": 96,
-      "rating": 4.8,
-      "created_at": "2025-06-01T12:00:00Z"
-    }
-  },
-  {
-    "model": "library.book",
-    "pk": 2,
-    "fields": {
-      "isbn": "9782253006329",
-      "title": "L'Étranger",
-      "author": "Albert Camus",
-      "description": "Roman emblématique de l’absurde.",
-      "published": "1942",
-      "page_count": 185,
-      "rating": 4.3,
-      "created_at": "2025-06-01T12:00:00Z"
-    }
-  },
-  {
-    "model": "library.book",
-    "pk": 3,
-    "fields": {
-      "isbn": "9782266283225",
-      "title": "1984",
-      "author": "George Orwell",
-      "description": "Un chef-d'œuvre de la dystopie.",
-      "published": "1949",
-      "page_count": 328,
-      "rating": 4.7,
-      "created_at": "2025-06-01T12:00:00Z"
-    }
+{
+  "model": "library.book",
+  "pk": 1,
+  "fields": {
+    "isbn": "9782070368228",
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "description": "Un conte poétique et philosophique.",
+    "published": "1943",
+    "cover_url": "",
+    "page_count": 96,
+    "rating": 4.8,
+    "created_at": "2025-06-01T12:00:00Z"
   }
+},
+{
+  "model": "library.book",
+  "pk": 2,
+  "fields": {
+    "isbn": "9782253006329",
+    "title": "L'Étranger",
+    "author": "Albert Camus",
+    "description": "Roman emblématique de l’absurde.",
+    "published": "1942",
+    "cover_url": "",
+    "page_count": 185,
+    "rating": 4.3,
+    "created_at": "2025-06-01T12:00:00Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 3,
+  "fields": {
+    "isbn": "9782266283225",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "Un chef-d'œuvre de la dystopie.",
+    "published": "1949",
+    "cover_url": "",
+    "page_count": 328,
+    "rating": 4.7,
+    "created_at": "2025-06-01T12:00:00Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 4,
+  "fields": {
+    "isbn": "9780000000000",
+    "title": "Livre 0",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1950",
+    "cover_url": "",
+    "page_count": 356,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.475Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 5,
+  "fields": {
+    "isbn": "9780000000001",
+    "title": "Livre 1",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1951",
+    "cover_url": "",
+    "page_count": 463,
+    "rating": 1.2,
+    "created_at": "2025-06-02T14:47:27.477Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 6,
+  "fields": {
+    "isbn": "9780000000002",
+    "title": "Livre 2",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1952",
+    "cover_url": "",
+    "page_count": 706,
+    "rating": 3.2,
+    "created_at": "2025-06-02T14:47:27.478Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 7,
+  "fields": {
+    "isbn": "9780000000003",
+    "title": "Livre 3",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1953",
+    "cover_url": "",
+    "page_count": 409,
+    "rating": 2.1,
+    "created_at": "2025-06-02T14:47:27.478Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 8,
+  "fields": {
+    "isbn": "9780000000004",
+    "title": "Livre 4",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1954",
+    "cover_url": "",
+    "page_count": 264,
+    "rating": 4.2,
+    "created_at": "2025-06-02T14:47:27.479Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 9,
+  "fields": {
+    "isbn": "9780000000005",
+    "title": "Livre 5",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1955",
+    "cover_url": "",
+    "page_count": 608,
+    "rating": 1.9,
+    "created_at": "2025-06-02T14:47:27.479Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 10,
+  "fields": {
+    "isbn": "9780000000006",
+    "title": "Livre 6",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1956",
+    "cover_url": "",
+    "page_count": 267,
+    "rating": 1.1,
+    "created_at": "2025-06-02T14:47:27.479Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 11,
+  "fields": {
+    "isbn": "9780000000007",
+    "title": "Livre 7",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1957",
+    "cover_url": "",
+    "page_count": 650,
+    "rating": 4.0,
+    "created_at": "2025-06-02T14:47:27.480Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 12,
+  "fields": {
+    "isbn": "9780000000008",
+    "title": "Livre 8",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1958",
+    "cover_url": "",
+    "page_count": 474,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.480Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 13,
+  "fields": {
+    "isbn": "9780000000009",
+    "title": "Livre 9",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1959",
+    "cover_url": "",
+    "page_count": 255,
+    "rating": 4.2,
+    "created_at": "2025-06-02T14:47:27.480Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 14,
+  "fields": {
+    "isbn": "9780000000010",
+    "title": "Livre 10",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1960",
+    "cover_url": "",
+    "page_count": 221,
+    "rating": 2.9,
+    "created_at": "2025-06-02T14:47:27.481Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 15,
+  "fields": {
+    "isbn": "9780000000011",
+    "title": "Livre 11",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1961",
+    "cover_url": "",
+    "page_count": 433,
+    "rating": 3.4,
+    "created_at": "2025-06-02T14:47:27.482Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 16,
+  "fields": {
+    "isbn": "9780000000012",
+    "title": "Livre 12",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1962",
+    "cover_url": "",
+    "page_count": 586,
+    "rating": 3.9,
+    "created_at": "2025-06-02T14:47:27.482Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 17,
+  "fields": {
+    "isbn": "9780000000013",
+    "title": "Livre 13",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1963",
+    "cover_url": "",
+    "page_count": 798,
+    "rating": 4.0,
+    "created_at": "2025-06-02T14:47:27.483Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 18,
+  "fields": {
+    "isbn": "9780000000014",
+    "title": "Livre 14",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1964",
+    "cover_url": "",
+    "page_count": 785,
+    "rating": 1.2,
+    "created_at": "2025-06-02T14:47:27.483Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 19,
+  "fields": {
+    "isbn": "9780000000015",
+    "title": "Livre 15",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1965",
+    "cover_url": "",
+    "page_count": 628,
+    "rating": 1.7,
+    "created_at": "2025-06-02T14:47:27.484Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 20,
+  "fields": {
+    "isbn": "9780000000016",
+    "title": "Livre 16",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1966",
+    "cover_url": "",
+    "page_count": 651,
+    "rating": 1.5,
+    "created_at": "2025-06-02T14:47:27.484Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 21,
+  "fields": {
+    "isbn": "9780000000017",
+    "title": "Livre 17",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1967",
+    "cover_url": "",
+    "page_count": 739,
+    "rating": 3.3,
+    "created_at": "2025-06-02T14:47:27.485Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 22,
+  "fields": {
+    "isbn": "9780000000018",
+    "title": "Livre 18",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1968",
+    "cover_url": "",
+    "page_count": 261,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.485Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 23,
+  "fields": {
+    "isbn": "9780000000019",
+    "title": "Livre 19",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1969",
+    "cover_url": "",
+    "page_count": 721,
+    "rating": 3.4,
+    "created_at": "2025-06-02T14:47:27.486Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 24,
+  "fields": {
+    "isbn": "9780000000020",
+    "title": "Livre 20",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1970",
+    "cover_url": "",
+    "page_count": 442,
+    "rating": 4.2,
+    "created_at": "2025-06-02T14:47:27.487Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 25,
+  "fields": {
+    "isbn": "9780000000021",
+    "title": "Livre 21",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1971",
+    "cover_url": "",
+    "page_count": 201,
+    "rating": 1.3,
+    "created_at": "2025-06-02T14:47:27.487Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 26,
+  "fields": {
+    "isbn": "9780000000022",
+    "title": "Livre 22",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1972",
+    "cover_url": "",
+    "page_count": 585,
+    "rating": 4.6,
+    "created_at": "2025-06-02T14:47:27.488Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 27,
+  "fields": {
+    "isbn": "9780000000023",
+    "title": "Livre 23",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1973",
+    "cover_url": "",
+    "page_count": 274,
+    "rating": 1.9,
+    "created_at": "2025-06-02T14:47:27.488Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 28,
+  "fields": {
+    "isbn": "9780000000024",
+    "title": "Livre 24",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1974",
+    "cover_url": "",
+    "page_count": 558,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.489Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 29,
+  "fields": {
+    "isbn": "9780000000025",
+    "title": "Livre 25",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1975",
+    "cover_url": "",
+    "page_count": 285,
+    "rating": 1.6,
+    "created_at": "2025-06-02T14:47:27.489Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 30,
+  "fields": {
+    "isbn": "9780000000026",
+    "title": "Livre 26",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1976",
+    "cover_url": "",
+    "page_count": 572,
+    "rating": 3.0,
+    "created_at": "2025-06-02T14:47:27.490Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 31,
+  "fields": {
+    "isbn": "9780000000027",
+    "title": "Livre 27",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1977",
+    "cover_url": "",
+    "page_count": 420,
+    "rating": 4.6,
+    "created_at": "2025-06-02T14:47:27.490Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 32,
+  "fields": {
+    "isbn": "9780000000028",
+    "title": "Livre 28",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1978",
+    "cover_url": "",
+    "page_count": 513,
+    "rating": 4.4,
+    "created_at": "2025-06-02T14:47:27.491Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 33,
+  "fields": {
+    "isbn": "9780000000029",
+    "title": "Livre 29",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1979",
+    "cover_url": "",
+    "page_count": 605,
+    "rating": 4.9,
+    "created_at": "2025-06-02T14:47:27.491Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 34,
+  "fields": {
+    "isbn": "9780000000030",
+    "title": "Livre 30",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1980",
+    "cover_url": "",
+    "page_count": 101,
+    "rating": 4.9,
+    "created_at": "2025-06-02T14:47:27.492Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 35,
+  "fields": {
+    "isbn": "9780000000031",
+    "title": "Livre 31",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1981",
+    "cover_url": "",
+    "page_count": 449,
+    "rating": 1.6,
+    "created_at": "2025-06-02T14:47:27.492Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 36,
+  "fields": {
+    "isbn": "9780000000032",
+    "title": "Livre 32",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1982",
+    "cover_url": "",
+    "page_count": 541,
+    "rating": 4.1,
+    "created_at": "2025-06-02T14:47:27.492Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 37,
+  "fields": {
+    "isbn": "9780000000033",
+    "title": "Livre 33",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1983",
+    "cover_url": "",
+    "page_count": 575,
+    "rating": 2.8,
+    "created_at": "2025-06-02T14:47:27.493Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 38,
+  "fields": {
+    "isbn": "9780000000034",
+    "title": "Livre 34",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1984",
+    "cover_url": "",
+    "page_count": 242,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.493Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 39,
+  "fields": {
+    "isbn": "9780000000035",
+    "title": "Livre 35",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1985",
+    "cover_url": "",
+    "page_count": 110,
+    "rating": 1.9,
+    "created_at": "2025-06-02T14:47:27.494Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 40,
+  "fields": {
+    "isbn": "9780000000036",
+    "title": "Livre 36",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1986",
+    "cover_url": "",
+    "page_count": 760,
+    "rating": 1.6,
+    "created_at": "2025-06-02T14:47:27.494Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 41,
+  "fields": {
+    "isbn": "9780000000037",
+    "title": "Livre 37",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1987",
+    "cover_url": "",
+    "page_count": 411,
+    "rating": 5.0,
+    "created_at": "2025-06-02T14:47:27.495Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 42,
+  "fields": {
+    "isbn": "9780000000038",
+    "title": "Livre 38",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1988",
+    "cover_url": "",
+    "page_count": 649,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.495Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 43,
+  "fields": {
+    "isbn": "9780000000039",
+    "title": "Livre 39",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1989",
+    "cover_url": "",
+    "page_count": 711,
+    "rating": 2.2,
+    "created_at": "2025-06-02T14:47:27.496Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 44,
+  "fields": {
+    "isbn": "9780000000040",
+    "title": "Livre 40",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1990",
+    "cover_url": "",
+    "page_count": 404,
+    "rating": 4.8,
+    "created_at": "2025-06-02T14:47:27.496Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 45,
+  "fields": {
+    "isbn": "9780000000041",
+    "title": "Livre 41",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1991",
+    "cover_url": "",
+    "page_count": 698,
+    "rating": 1.7,
+    "created_at": "2025-06-02T14:47:27.496Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 46,
+  "fields": {
+    "isbn": "9780000000042",
+    "title": "Livre 42",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1992",
+    "cover_url": "",
+    "page_count": 348,
+    "rating": 2.1,
+    "created_at": "2025-06-02T14:47:27.497Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 47,
+  "fields": {
+    "isbn": "9780000000043",
+    "title": "Livre 43",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1993",
+    "cover_url": "",
+    "page_count": 114,
+    "rating": 2.7,
+    "created_at": "2025-06-02T14:47:27.497Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 48,
+  "fields": {
+    "isbn": "9780000000044",
+    "title": "Livre 44",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1994",
+    "cover_url": "",
+    "page_count": 405,
+    "rating": 2.4,
+    "created_at": "2025-06-02T14:47:27.498Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 49,
+  "fields": {
+    "isbn": "9780000000045",
+    "title": "Livre 45",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1995",
+    "cover_url": "",
+    "page_count": 190,
+    "rating": 4.0,
+    "created_at": "2025-06-02T14:47:27.498Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 50,
+  "fields": {
+    "isbn": "9780000000046",
+    "title": "Livre 46",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1996",
+    "cover_url": "",
+    "page_count": 595,
+    "rating": 4.7,
+    "created_at": "2025-06-02T14:47:27.499Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 51,
+  "fields": {
+    "isbn": "9780000000047",
+    "title": "Livre 47",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1997",
+    "cover_url": "",
+    "page_count": 102,
+    "rating": 2.9,
+    "created_at": "2025-06-02T14:47:27.499Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 52,
+  "fields": {
+    "isbn": "9780000000048",
+    "title": "Livre 48",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1998",
+    "cover_url": "",
+    "page_count": 779,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.499Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 53,
+  "fields": {
+    "isbn": "9780000000049",
+    "title": "Livre 49",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1999",
+    "cover_url": "",
+    "page_count": 242,
+    "rating": 4.6,
+    "created_at": "2025-06-02T14:47:27.500Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 54,
+  "fields": {
+    "isbn": "9780000000050",
+    "title": "Livre 50",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2000",
+    "cover_url": "",
+    "page_count": 576,
+    "rating": 1.1,
+    "created_at": "2025-06-02T14:47:27.501Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 55,
+  "fields": {
+    "isbn": "9780000000051",
+    "title": "Livre 51",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2001",
+    "cover_url": "",
+    "page_count": 316,
+    "rating": 4.3,
+    "created_at": "2025-06-02T14:47:27.501Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 56,
+  "fields": {
+    "isbn": "9780000000052",
+    "title": "Livre 52",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2002",
+    "cover_url": "",
+    "page_count": 188,
+    "rating": 4.2,
+    "created_at": "2025-06-02T14:47:27.502Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 57,
+  "fields": {
+    "isbn": "9780000000053",
+    "title": "Livre 53",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2003",
+    "cover_url": "",
+    "page_count": 676,
+    "rating": 1.5,
+    "created_at": "2025-06-02T14:47:27.502Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 58,
+  "fields": {
+    "isbn": "9780000000054",
+    "title": "Livre 54",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2004",
+    "cover_url": "",
+    "page_count": 131,
+    "rating": 2.9,
+    "created_at": "2025-06-02T14:47:27.503Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 59,
+  "fields": {
+    "isbn": "9780000000055",
+    "title": "Livre 55",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2005",
+    "cover_url": "",
+    "page_count": 424,
+    "rating": 2.8,
+    "created_at": "2025-06-02T14:47:27.503Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 60,
+  "fields": {
+    "isbn": "9780000000056",
+    "title": "Livre 56",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2006",
+    "cover_url": "",
+    "page_count": 277,
+    "rating": 1.8,
+    "created_at": "2025-06-02T14:47:27.504Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 61,
+  "fields": {
+    "isbn": "9780000000057",
+    "title": "Livre 57",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2007",
+    "cover_url": "",
+    "page_count": 204,
+    "rating": 4.3,
+    "created_at": "2025-06-02T14:47:27.504Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 62,
+  "fields": {
+    "isbn": "9780000000058",
+    "title": "Livre 58",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2008",
+    "cover_url": "",
+    "page_count": 253,
+    "rating": 3.0,
+    "created_at": "2025-06-02T14:47:27.505Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 63,
+  "fields": {
+    "isbn": "9780000000059",
+    "title": "Livre 59",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2009",
+    "cover_url": "",
+    "page_count": 299,
+    "rating": 1.8,
+    "created_at": "2025-06-02T14:47:27.506Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 64,
+  "fields": {
+    "isbn": "9780000000060",
+    "title": "Livre 60",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2010",
+    "cover_url": "",
+    "page_count": 452,
+    "rating": 2.2,
+    "created_at": "2025-06-02T14:47:27.506Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 65,
+  "fields": {
+    "isbn": "9780000000061",
+    "title": "Livre 61",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2011",
+    "cover_url": "",
+    "page_count": 331,
+    "rating": 2.8,
+    "created_at": "2025-06-02T14:47:27.507Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 66,
+  "fields": {
+    "isbn": "9780000000062",
+    "title": "Livre 62",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2012",
+    "cover_url": "",
+    "page_count": 168,
+    "rating": 3.6,
+    "created_at": "2025-06-02T14:47:27.507Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 67,
+  "fields": {
+    "isbn": "9780000000063",
+    "title": "Livre 63",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2013",
+    "cover_url": "",
+    "page_count": 301,
+    "rating": 4.7,
+    "created_at": "2025-06-02T14:47:27.508Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 68,
+  "fields": {
+    "isbn": "9780000000064",
+    "title": "Livre 64",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2014",
+    "cover_url": "",
+    "page_count": 131,
+    "rating": 4.7,
+    "created_at": "2025-06-02T14:47:27.508Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 69,
+  "fields": {
+    "isbn": "9780000000065",
+    "title": "Livre 65",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2015",
+    "cover_url": "",
+    "page_count": 685,
+    "rating": 1.6,
+    "created_at": "2025-06-02T14:47:27.508Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 70,
+  "fields": {
+    "isbn": "9780000000066",
+    "title": "Livre 66",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2016",
+    "cover_url": "",
+    "page_count": 659,
+    "rating": 3.6,
+    "created_at": "2025-06-02T14:47:27.509Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 71,
+  "fields": {
+    "isbn": "9780000000067",
+    "title": "Livre 67",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2017",
+    "cover_url": "",
+    "page_count": 463,
+    "rating": 1.4,
+    "created_at": "2025-06-02T14:47:27.509Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 72,
+  "fields": {
+    "isbn": "9780000000068",
+    "title": "Livre 68",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2018",
+    "cover_url": "",
+    "page_count": 601,
+    "rating": 3.2,
+    "created_at": "2025-06-02T14:47:27.509Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 73,
+  "fields": {
+    "isbn": "9780000000069",
+    "title": "Livre 69",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "2019",
+    "cover_url": "",
+    "page_count": 350,
+    "rating": 3.7,
+    "created_at": "2025-06-02T14:47:27.510Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 74,
+  "fields": {
+    "isbn": "9780000000070",
+    "title": "Livre 70",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1950",
+    "cover_url": "",
+    "page_count": 769,
+    "rating": 1.4,
+    "created_at": "2025-06-02T14:47:27.510Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 75,
+  "fields": {
+    "isbn": "9780000000071",
+    "title": "Livre 71",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1951",
+    "cover_url": "",
+    "page_count": 186,
+    "rating": 2.3,
+    "created_at": "2025-06-02T14:47:27.510Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 76,
+  "fields": {
+    "isbn": "9780000000072",
+    "title": "Livre 72",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1952",
+    "cover_url": "",
+    "page_count": 559,
+    "rating": 3.0,
+    "created_at": "2025-06-02T14:47:27.511Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 77,
+  "fields": {
+    "isbn": "9780000000073",
+    "title": "Livre 73",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1953",
+    "cover_url": "",
+    "page_count": 184,
+    "rating": 1.2,
+    "created_at": "2025-06-02T14:47:27.511Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 78,
+  "fields": {
+    "isbn": "9780000000074",
+    "title": "Livre 74",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1954",
+    "cover_url": "",
+    "page_count": 633,
+    "rating": 1.9,
+    "created_at": "2025-06-02T14:47:27.512Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 79,
+  "fields": {
+    "isbn": "9780000000075",
+    "title": "Livre 75",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1955",
+    "cover_url": "",
+    "page_count": 685,
+    "rating": 2.9,
+    "created_at": "2025-06-02T14:47:27.512Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 80,
+  "fields": {
+    "isbn": "9780000000076",
+    "title": "Livre 76",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1956",
+    "cover_url": "",
+    "page_count": 389,
+    "rating": 1.8,
+    "created_at": "2025-06-02T14:47:27.512Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 81,
+  "fields": {
+    "isbn": "9780000000077",
+    "title": "Livre 77",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1957",
+    "cover_url": "",
+    "page_count": 308,
+    "rating": 3.7,
+    "created_at": "2025-06-02T14:47:27.513Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 82,
+  "fields": {
+    "isbn": "9780000000078",
+    "title": "Livre 78",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1958",
+    "cover_url": "",
+    "page_count": 444,
+    "rating": 2.5,
+    "created_at": "2025-06-02T14:47:27.513Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 83,
+  "fields": {
+    "isbn": "9780000000079",
+    "title": "Livre 79",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1959",
+    "cover_url": "",
+    "page_count": 658,
+    "rating": 2.4,
+    "created_at": "2025-06-02T14:47:27.513Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 84,
+  "fields": {
+    "isbn": "9780000000080",
+    "title": "Livre 80",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1960",
+    "cover_url": "",
+    "page_count": 184,
+    "rating": 2.8,
+    "created_at": "2025-06-02T14:47:27.514Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 85,
+  "fields": {
+    "isbn": "9780000000081",
+    "title": "Livre 81",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1961",
+    "cover_url": "",
+    "page_count": 466,
+    "rating": 4.3,
+    "created_at": "2025-06-02T14:47:27.514Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 86,
+  "fields": {
+    "isbn": "9780000000082",
+    "title": "Livre 82",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1962",
+    "cover_url": "",
+    "page_count": 397,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.515Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 87,
+  "fields": {
+    "isbn": "9780000000083",
+    "title": "Livre 83",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1963",
+    "cover_url": "",
+    "page_count": 513,
+    "rating": 3.2,
+    "created_at": "2025-06-02T14:47:27.515Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 88,
+  "fields": {
+    "isbn": "9780000000084",
+    "title": "Livre 84",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1964",
+    "cover_url": "",
+    "page_count": 364,
+    "rating": 4.8,
+    "created_at": "2025-06-02T14:47:27.516Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 89,
+  "fields": {
+    "isbn": "9780000000085",
+    "title": "Livre 85",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1965",
+    "cover_url": "",
+    "page_count": 794,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.516Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 90,
+  "fields": {
+    "isbn": "9780000000086",
+    "title": "Livre 86",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1966",
+    "cover_url": "",
+    "page_count": 757,
+    "rating": 2.1,
+    "created_at": "2025-06-02T14:47:27.517Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 91,
+  "fields": {
+    "isbn": "9780000000087",
+    "title": "Livre 87",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1967",
+    "cover_url": "",
+    "page_count": 422,
+    "rating": 3.5,
+    "created_at": "2025-06-02T14:47:27.517Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 92,
+  "fields": {
+    "isbn": "9780000000088",
+    "title": "Livre 88",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1968",
+    "cover_url": "",
+    "page_count": 590,
+    "rating": 4.4,
+    "created_at": "2025-06-02T14:47:27.518Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 93,
+  "fields": {
+    "isbn": "9780000000089",
+    "title": "Livre 89",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1969",
+    "cover_url": "",
+    "page_count": 386,
+    "rating": 2.3,
+    "created_at": "2025-06-02T14:47:27.519Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 94,
+  "fields": {
+    "isbn": "9780000000090",
+    "title": "Livre 90",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1970",
+    "cover_url": "",
+    "page_count": 268,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.519Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 95,
+  "fields": {
+    "isbn": "9780000000091",
+    "title": "Livre 91",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1971",
+    "cover_url": "",
+    "page_count": 322,
+    "rating": 1.1,
+    "created_at": "2025-06-02T14:47:27.520Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 96,
+  "fields": {
+    "isbn": "9780000000092",
+    "title": "Livre 92",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1972",
+    "cover_url": "",
+    "page_count": 395,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.520Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 97,
+  "fields": {
+    "isbn": "9780000000093",
+    "title": "Livre 93",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1973",
+    "cover_url": "",
+    "page_count": 206,
+    "rating": 2.4,
+    "created_at": "2025-06-02T14:47:27.521Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 98,
+  "fields": {
+    "isbn": "9780000000094",
+    "title": "Livre 94",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1974",
+    "cover_url": "",
+    "page_count": 123,
+    "rating": 4.4,
+    "created_at": "2025-06-02T14:47:27.521Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 99,
+  "fields": {
+    "isbn": "9780000000095",
+    "title": "Livre 95",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1975",
+    "cover_url": "",
+    "page_count": 537,
+    "rating": 3.8,
+    "created_at": "2025-06-02T14:47:27.522Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 100,
+  "fields": {
+    "isbn": "9780000000096",
+    "title": "Livre 96",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1976",
+    "cover_url": "",
+    "page_count": 112,
+    "rating": 2.6,
+    "created_at": "2025-06-02T14:47:27.522Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 101,
+  "fields": {
+    "isbn": "9780000000097",
+    "title": "Livre 97",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1977",
+    "cover_url": "",
+    "page_count": 579,
+    "rating": 3.1,
+    "created_at": "2025-06-02T14:47:27.523Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 102,
+  "fields": {
+    "isbn": "9780000000098",
+    "title": "Livre 98",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1978",
+    "cover_url": "",
+    "page_count": 407,
+    "rating": 2.6,
+    "created_at": "2025-06-02T14:47:27.523Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 103,
+  "fields": {
+    "isbn": "9780000000099",
+    "title": "Livre 99",
+    "author": "Auteur auto",
+    "description": "Livre généré pour test",
+    "published": "1979",
+    "cover_url": "",
+    "page_count": 755,
+    "rating": 3.4,
+    "created_at": "2025-06-02T14:47:27.523Z"
+  }
+}
 ]

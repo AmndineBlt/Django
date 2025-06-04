@@ -173,6 +173,7 @@ INSTALLED_APPS = [
     'library',
 ]
 ```
+
 ### 3.3 — Vérification
 
 Tester que tout est bien connecté :

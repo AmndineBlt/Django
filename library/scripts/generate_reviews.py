@@ -1,39 +1,30 @@
-import random
+from django.core.management import call_command
+from library.models import Review, Book
 from django.contrib.auth.models import User
-from library.models import Book, Review
+from faker import Faker
+import random
 
-def run():
+faker = Faker('fr_FR')
+
+def run(n=50):
+    """_summary_
+
+    Args:
+        n (int, optional): _description_. Defaults to 50.
+    """
     users = list(User.objects.all())
     books = list(Book.objects.all())
 
-    if not users:
-        print("❌ Aucun utilisateur trouvé.")
-        return
+    for _ in range(n):
+        Review.objects.create(
+            user=random.choice(users),
+            book=random.choice(books),
+            rating=random.randint(1, 5),
+            comment=faker.sentence()
+        )
+    print(f"✅ {n} avis générés")
 
-    if not books:
-        print("❌ Aucun livre trouvé.")
-        return
-
-    for book in random.sample(books, min(30, len(books))):
-        num_reviews = random.randint(1, 3)
-
-        for _ in range(num_reviews):
-            user = random.choice(users)
-            rating = random.randint(1, 5)
-            comment = random.choice([
-                "Génial !", "Pas mal", "Bof", "Une lecture difficile", "Un chef-d'œuvre", ""
-            ])
-
-            review, created = Review.objects.get_or_create(
-                user=user,
-                book=book,
-                defaults={
-                    'rating': rating,
-                    'comment': comment
-                }
-            )
-
-            if created:
-                print(f"✅ {user.username} → {book.title} ({rating}⭐)")
-            else:
-                print(f"⚠️ Review déjà existante : {user.username} → {book.title}")
+    # 💾 Dump des données
+    with open("library/fixtures/reviews.json", "w", encoding="utf-8") as f:
+        call_command("dumpdata", "library.Book", indent=2, stdout=f)
+    print("💾 Fixture reviews.json générée.")

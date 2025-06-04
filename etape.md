@@ -108,7 +108,7 @@ pip install psycopg2-binary
 
 ### 2.4 — Configurer Django pour utiliser PostgreSQL
 
-On ouvre le fichier `biblio_backend/settings.py`, et cherche la partie `DATABASES` :
+On ouvre le fichier `biblio_backend/settings.py`, et cherche la partie `DATABASES` et on entre les infos necessaire à la connexion
 
 ```py
 DATABASES = {
@@ -134,9 +134,9 @@ Cela va créer les tables de base (auth, admin, sessions, etc.) dans ta base Pos
 
 ### 🧠 Cours express — C’est quoi une "app" Django ?
 
-Django est structuré autour de la notion de projet (ton backend global) et de "apps" (des modules réutilisables).
+Django est structuré autour de la notion de projet (backend global) et de "apps" (des modules réutilisables).
 
-  Une app = un composant autonome de ton projet, avec ses propres modèles, vues, routes, etc.
+  Une app = un composant autonome du projet, avec ses propres modèles, vues, routes, etc.
 
 Exemples d’apps dans un projet réel :
 
@@ -145,7 +145,7 @@ Exemples d’apps dans un projet réel :
   comments → gère les commentaires
   payments → gère les paiements...
 
-Tu peux avoir plusieurs apps dans un projet Django.
+On peut avoir plusieurs apps dans un projet Django.
 
 ### 3.1 — Créer l’app `library`
 
@@ -157,7 +157,7 @@ python manage.py startapp library
 ### 3.2 — Déclarer l’app dans le projet
 
 Pour que Django prenne en compte l’app, il faut l’ajouter à la config.
-Ouvre biblio_backend/settings.py et dans INSTALLED_APPS, ajoute :
+Ouvrir biblio_backend/settings.py et dans INSTALLED_APPS, ajouter :
 
 ```py
 INSTALLED_APPS = [
@@ -173,6 +173,7 @@ INSTALLED_APPS = [
     'library',
 ]
 ```
+
 ### 3.3 — Vérification
 
 Tester que tout est bien connecté :
@@ -180,7 +181,7 @@ Tester que tout est bien connecté :
 python manage.py makemigrations
 python manage.py migrate
 ```
-Même s’il n’y a pas encore de modèle, Django garde une trace de ton app
+Même s’il n’y a pas encore de modèle, Django garde une trace de l'app
 
 ## 🛠️ Étape 4 — Structure de la base de données
 

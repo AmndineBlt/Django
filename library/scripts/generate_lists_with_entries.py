@@ -1,3 +1,4 @@
+from django.core.management import call_command
 import random
 from django.contrib.auth.models import User
 from library.models import Book, UserList, ListEntry
@@ -27,3 +28,7 @@ def run():
                     print(f"    📚 Livre ajouté : {book.title}")
                 else:
                     print(f"    ⏩ Déjà présent : {book.title}")
+
+    with open("library/fixtures/lists_and_entries.json", "w", encoding="utf-8") as f:
+        call_command("dumpdata", "library.UserList", "library.ListEntry", indent=2, stdout=f)
+    print("💾 Fixture lists_and_entries.json générée.")

@@ -1,24 +1,30 @@
-import random
+from django.core.management import call_command
+from faker import Faker
 from library.models import Book
+import random
 
-def run():
-    for i in range(100):
-        isbn = f"978000000{i:04}"
+faker = Faker("fr_FR")
 
-        # get_or_create évite les doublons si l'isbn existe déjà
-        book, created = Book.objects.get_or_create(
-            isbn=isbn,
-            defaults={
-                "title": f"Livre {i}",
-                "author": "Auteur auto",
-                "description": "Livre généré pour test",
-                "published": str(1950 + i % 70),
-                "page_count": random.randint(100, 800),
-                "rating": round(random.uniform(1, 5), 1),
-            }
+def run(n=10):
+    """_summary_
+
+    Args:
+        n (int, optional): _description_. Defaults to 10.
+    """
+    for _ in range(n):
+        Book.objects.create(
+            isbn=faker.isbn13(separator=""),
+            title=faker.sentence(nb_words=4),
+            author=faker.name(),
+            description=faker.paragraph(nb_sentences=3),
+            published=str(faker.year()),
+            page_count=random.randint(50, 1000),
+            rating=round(random.uniform(1, 5), 1)
         )
 
-        if created:
-            print(f"✅ Livre créé : {book.title}")
-        else:
-            print(f"⚠️ Déjà existant : {book.title}")
+    print(f"{n} fake books added.")
+
+    # 💾 Dump des données
+    with open("library/fixtures/books.json", "w", encoding="utf-8") as f:
+        call_command("dumpdata", "library.Review", indent=2, stdout=f)
+    print("💾 Fixture books.json générée.")

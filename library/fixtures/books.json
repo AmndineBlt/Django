@@ -1,0 +1,152 @@
+[
+{
+  "model": "library.book",
+  "pk": 184,
+  "fields": {
+    "isbn": "9781528874212",
+    "title": "Espace fin avec quatre",
+    "author": "Théodore Perez",
+    "description": "Couler heureux histoire fatigue social inconnu sourire. Marche situation partout préparer arrivée rapporter promener.",
+    "published": "2003",
+    "cover_url": "",
+    "page_count": 127,
+    "rating": 3.2,
+    "created_at": "2025-06-04T09:51:59.061Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 185,
+  "fields": {
+    "isbn": "9780024776822",
+    "title": "Couche moins fine ami accompagner",
+    "author": "Maurice Lecomte",
+    "description": "Effet métier genou dehors paquet ton. Sentiment debout ordre vendre cri victime part.",
+    "published": "2017",
+    "cover_url": "",
+    "page_count": 850,
+    "rating": 3.6,
+    "created_at": "2025-06-04T09:51:59.063Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 186,
+  "fields": {
+    "isbn": "9781994667271",
+    "title": "Sans rang rayon agiter",
+    "author": "Julien de Hamel",
+    "description": "Ce magnifique tellement suffire toit maître doute. Calme crier ton colon.",
+    "published": "2007",
+    "cover_url": "",
+    "page_count": 857,
+    "rating": 4.9,
+    "created_at": "2025-06-04T09:51:59.063Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 187,
+  "fields": {
+    "isbn": "9780111277348",
+    "title": "Voix conclure rapport trembler paysage",
+    "author": "Lucie Thierry de Besson",
+    "description": "Jamais briser autour presser envoyer. Même vous agent décider pendant rouler tour conseil. Approcher train charger faveur carte supposer bout.",
+    "published": "1995",
+    "cover_url": "",
+    "page_count": 860,
+    "rating": 3.1,
+    "created_at": "2025-06-04T09:51:59.065Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 188,
+  "fields": {
+    "isbn": "9780466996529",
+    "title": "Intérêt théâtre un permettre",
+    "author": "Marcelle Chevalier",
+    "description": "Âgé examiner bas en principe. Promettre pourquoi saint confondre encore.",
+    "published": "2007",
+    "cover_url": "",
+    "page_count": 318,
+    "rating": 2.4,
+    "created_at": "2025-06-04T09:51:59.066Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 189,
+  "fields": {
+    "isbn": "9780165742052",
+    "title": "Parler confondre descendre manquer",
+    "author": "Suzanne Bouchet",
+    "description": "Soir elle agir fou terrible semblable. Avec sept position nourrir prix. Désormais soutenir raison vif traîner essayer.",
+    "published": "1985",
+    "cover_url": "",
+    "page_count": 686,
+    "rating": 4.6,
+    "created_at": "2025-06-04T09:51:59.067Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 190,
+  "fields": {
+    "isbn": "9781700057525",
+    "title": "Drame étaler signe",
+    "author": "Danielle de la Klein",
+    "description": "Tracer mal cri secours horizon sourire.",
+    "published": "1978",
+    "cover_url": "",
+    "page_count": 756,
+    "rating": 4.3,
+    "created_at": "2025-06-04T09:51:59.068Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 191,
+  "fields": {
+    "isbn": "9780060513474",
+    "title": "Déclarer pluie nouveau position",
+    "author": "Andrée Brunel",
+    "description": "Conseil entourer souvenir réussir. Froid fixer vide garder. Sentir année rencontrer diriger dans seul l'une.",
+    "published": "1995",
+    "cover_url": "",
+    "page_count": 196,
+    "rating": 4.3,
+    "created_at": "2025-06-04T09:51:59.069Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 192,
+  "fields": {
+    "isbn": "9781461393696",
+    "title": "Mettre succès très",
+    "author": "Nath Guillot",
+    "description": "Admettre juger mesure jaune. Port seulement fait arbre esprit grâce.",
+    "published": "1980",
+    "cover_url": "",
+    "page_count": 985,
+    "rating": 2.7,
+    "created_at": "2025-06-04T09:51:59.070Z"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 193,
+  "fields": {
+    "isbn": "9780744369656",
+    "title": "Compagnon gloire",
+    "author": "Émilie du Vidal",
+    "description": "Haut un inquiéter rappeler roche train animal. Rouge réussir passage éteindre politique personnage endormir.",
+    "published": "1991",
+    "cover_url": "",
+    "page_count": 902,
+    "rating": 1.8,
+    "created_at": "2025-06-04T09:51:59.072Z"
+  }
+}
+]
